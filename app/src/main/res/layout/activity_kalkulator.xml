@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".kalkulator">
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="280dp"
+        android:hint="angka1"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:inputType="number"
+        android:layout_height="50dp"
+        android:background="@drawable/border"/>
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="280dp"
+        android:inputType="number"
+        android:hint="angka2"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_height="50dp"
+        android:background="@drawable/border"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="30dp">
+
+        <Button
+            android:id="@+id/btnplus"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/button"
+            android:text="plus" />
+
+        <Button
+            android:id="@+id/btnminus"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:text="minus" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="30dp">
+
+        <Button
+            android:id="@+id/btnmultiple"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/button"
+            android:text="multiple" />
+
+        <Button
+            android:id="@+id/btndivision"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:text="division" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txthasil"
+        android:layout_width="150dp"
+        android:textSize="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:text="hasil"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="30dp">
+
+        <Button
+            android:id="@+id/btnreset"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="70dp"
+            android:background="@color/red"
+            android:text="reset" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

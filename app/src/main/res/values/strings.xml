@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">latihanbaru10pplg2</string>
+
+
+    <string-array name="spinner_items">
+        <item>Laki Laki</item>
+        <item>Perempuan</item>
+        <item>Rahasia</item>
+    </string-array>
+</resources>
