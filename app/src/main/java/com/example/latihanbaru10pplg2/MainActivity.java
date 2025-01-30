@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
    EditText edUser;
    EditText edPassword;
    Button btnLogin;
+   Button btnLogin1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -41,7 +42,15 @@ public class MainActivity extends AppCompatActivity {
         edUser=(EditText) findViewById((R.id.edUser));
         edPassword = (EditText) findViewById(R.id.edPassword);
         btnLogin = (Button)  findViewById((R.id.btnlogin));
+        btnLogin1 = (Button) findViewById((R.id.button3));
 
+        btnLogin1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent page2 = new Intent(getApplicationContext(),ConstraintActiviy.class);
+                startActivity(page2);
+            }
+        });
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
