@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Bmi"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/text1"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="150dp"/>
+
+    <EditText
+        android:id="@+id/etberat"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:padding="12dp"
+        android:hint="BB"
+        app:layout_constraintEnd_toStartOf="@id/ettinggi"
+        android:textColorHint="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintStart_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="8dp"/>
+
+ <EditText
+     android:id="@+id/ettinggi"
+     android:layout_width="80dp"
+     android:layout_height="wrap_content"
+     android:background="@drawable/border"
+     android:padding="12dp"
+     android:hint="Cm"
+
+     android:textColorHint="@color/black"
+     app:layout_constraintTop_toBottomOf="@id/text1"
+   app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@id/etberat"
+     android:layout_marginTop="40dp"
+     android:layout_marginEnd="40dp"/>
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Hitung"
+       android:id="@+id/btnhitung"
+       app:layout_constraintTop_toBottomOf="@id/ettinggi"
+       app:layout_constraintEnd_toStartOf="@id/ettinggi"
+       app:layout_constraintStart_toEndOf="@id/etberat"
+      android:layout_marginTop="19dp"
+       android:background="@color/blue"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        android:id="@+id/text3"
+        android:textSize="20dp"
+         app:layout_constraintStart_toEndOf="@id/btnhitung"
+        app:layout_constraintTop_toBottomOf="@id/btnhitung"
+        app:layout_constraintEnd_toStartOf="@id/btnhitung"
+        android:layout_marginTop="19dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:id="@+id/text4"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+        app:layout_constraintStart_toEndOf="@id/text3"
+        app:layout_constraintEnd_toStartOf="@id/text3"
+        android:layout_marginTop="19dp"
+        android:textColor="@color/black"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

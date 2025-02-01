@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent page1 = new Intent(getApplicationContext(), kalkulator1.class);
                     startActivity(page1);
                 } else {
-                    Toast.makeText(MainActivity.this, "pitik", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "gagal login", Toast.LENGTH_SHORT).show();
                 }
             }
         });
