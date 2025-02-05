@@ -37,6 +37,7 @@ public class ConstraintActiviy extends  AppCompatActivity {
                    Toast.makeText(ConstraintActiviy.this, "anda login",Toast.LENGTH_SHORT).show();
                    Intent page1 = new Intent(getApplicationContext(), MainActivity2.class);
                    startActivity(page1);
+
                } else {
                    Toast.makeText(ConstraintActiviy.this,"anda gagal login",Toast.LENGTH_SHORT).show();
                }
